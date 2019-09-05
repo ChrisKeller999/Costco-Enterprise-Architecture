@@ -1,8 +1,8 @@
 ﻿---
-title: Watson Glossary
+title: Glossary
 template: _markdown.html
 ---
-##### A running wiki of Watson teams' lexicon and lingo
+##### A running wiki of lexicon and lingo
 <br>
 ___
 ## Bot
