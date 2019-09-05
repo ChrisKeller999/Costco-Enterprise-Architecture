@@ -28,7 +28,7 @@ The integration landscape that is under construction can be seen in the followin
 ### Developer Tooling
 
 We have a whole section of the site dedicated to Developer Tooling.
-- [Developer Guide](../dev/developer-guide/index/)
+- [Developer Guide](/dev/developer-guide/index/)
 
 
 ### Designing
