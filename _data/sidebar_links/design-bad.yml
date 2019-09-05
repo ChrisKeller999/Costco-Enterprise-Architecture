@@ -2,15 +2,9 @@ design-guild:
   title: Design Guild
   icon: compass
   external:
-  - name: WH Design Pattern & Asset Library
-    url: https://pages.github.ibm.com/Watson-Health/design-system/index.html
-  - name: Marketing resources
-    url: https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/W429907b3f6ec_4019_81f5_dbe030251892/page/Marketing%20Resources
-  - name: IBM Design
-    url: https://www.ibm.com/design/
-  - name: Design Career Playbook
-    url: http://design-career.w3ibm.mybluemix.net/
-next-phase:
+  - name: Design Pattern & Asset Library
+    url: www.yahoo.com
+ next-phase:
   title: Next Phase
   icon: compass
   pages:
@@ -21,28 +15,20 @@ tools:
   pages:
   - /tools/onboarding/design-onboarding/
 resources:
-  title: WH Resources
+  title: Resources
   icon: info
   external:
-  - name: Community
-    url: https://w3-connections.ibm.com/communities/service/html/communityoverview?communityUuid=902efee5-3b0e-4cc3-890f-5b4ba4192f58
-  - name: Blog
-    url: https://w3-connections.ibm.com/blogs/902efee5-3b0e-4cc3-890f-5b4ba4192f58?lang=en_us
+    - name: Blog
+    url: www.yahoo.com
   - name: Brand
-    url: https://watsonbrandtool.mybluemix.net/
+    url: www.yahoo.com
   - name: WH Design Pattern & Asset Library
-    url: https://pages.github.ibm.com/Watson-Health/design-system/index.html
-  - name: WH Compliance Training wiki
-    url: https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/W6a642739bb36_44d9_90cd_f2ec86efebbe/page/Training%20%26%20Document%20Control
-  - name: Watson Health Operations playbook
-    url: https://pages.github.ibm.com/wh-ops/wh-ops-playbook/
+    url: www.yahoo.com
   pages:
-  - /support/wh-glossary/
-  - /support/onboarding/
+  - /support/glossary/
   - /tools/index/
-  - /compliance/regulatory-considerations/
-about:
-  title: About The WH Playbook
+  about:
+  title: About The Playbook
   icon: info
   pages:
   - /about/index/
