@@ -1,9 +1,7 @@
-﻿---
 title: Glossary
 template: _markdown.html
 ---
 ##### A running wiki of lexicon and lingo
-<br>
 ___
 ## Bot
 a bot is an application that performs an automated task, such as setting an alarm, telling you the weather or searching online.
