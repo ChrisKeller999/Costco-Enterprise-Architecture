@@ -17,11 +17,8 @@
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.ibm.com:jasonlengstorf/bluemix-docs.git"
-  },
-  "author": "Jason Lengstorf <jason.lengstorf@ibm.com> (@jasonlengstorf)",
+ 
+  "author": "Chris Keller <christopherkeller@costco.com> ",
   "license": "ISC",
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.18.0",
