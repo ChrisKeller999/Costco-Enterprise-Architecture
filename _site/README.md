@@ -1,27 +1,11 @@
-# watson-health-playbook.github.ibm.com
-This repository is for The Watson Health Playbook, a GitHub Pages-based site that contains everything you need to know to run a Software Development Project
-https://pages.github.ibm.com/watson-health-playbook/
-
-It is based on the excellent [Watson Playbook](https://pages.github.ibm.com/the-playbook), which was in turn based on [Docs Starter](https://pages.github.ibm.com/jason-lengstorf/docs-starter/) by Jason Lengstorf.
+# Costco Enterprise Architecture Playbook
+This repository is for The Costco Enterprise Architecture Playbook, a GitHub Pages-based site that contains everything you need to know to run a Software Development Project
 
 # Contributing
 
 Please refer to the [Style Guide](#style-guide) for things like referencing external sites or other pages in the playbook, and so on.
 
 We love help! There are two kinds of changes you can contribute; tweaks, and major changes.
-
-**Tweaks**
-
-We've added a link to the top of every Playbook page that allows you quickly submit tweaks to that page.
-- Scroll to the top of the page
-- Click the link at the top of the page that says "Propose a Change"
-- Once the page loads in GitHub's web UI, click the pencil icon to edit the page
-- Make your tweaks
-- Scroll to the bottom and add a comment, click the "create new branch" radio button, and then the "Propose File Changes button".
-- You'll be brought to the "Create a Pull Request" page - click the "Create Pull Request" button.
-- Someone from the Playbook Squad will review your tweak and either merge it, or get back to you about it
-
-![edit page](https://pages.github.ibm.com/watson-health-playbook/resources/images/contributing/edit-playbook-page-in-github-web-ui.gif)
 
 **Major Changes**
 
