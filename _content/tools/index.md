@@ -6,8 +6,8 @@ sidebar: tools
 
 # Tools
 The following tool set consists of tools that are specifically customized and hosted for Costco, giving teams an integrated set of best-in-class tools to take projects from idea to production.
-- [GitHub](../github/) - IBM's internal deployment of GitHub Enterprise
-- [Confluence](../confluence/) - Collaborative document management integrated with Jira. Provides document control and version management of documents.
+- [GitHub](../github/) - Costco's internal deployment of GitHub Enterprise
+- [Confluence](../confluence/) - Collaborative document management. Provides document control and version management of documents.
 
 The following are additional tools which are used by Watson Health extensively.
 - .....
