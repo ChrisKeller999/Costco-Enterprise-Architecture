@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>Watson Health Playbook</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/img/favicon/manifest.json">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/main.css"></link>
+    <link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
+
+  </head>
+  <body>
+    <div class="disclaimer">
+      Jira, Confluence, Xray and Aha workflows are still being developed and are not production ready yet. Training on tools and process will be made available when ready.
+    </div>
+    <div class="app-chrome">
+      <header class="app-chrome__header">
+        <a href="/"
+           class="logo"
+           rel="home">
+          <img src="/assets/img/playbook-logo-white-transparent.png"
+               alt="The Watson Health Playbook"
+               class="logo__image"><span class="logo__text">Watson Health Playbook</span>
+        </a>
+      </header>
+      <main class="content app-chrome__main-content">
+        <nav class="content__nav">
+            <a class="content__nav-link u-icon u-icon--before u-icon--search"
+            href="/search.html">
+              Search
+            </a>
+          <a class="content__nav-link u-icon u-icon--before u-icon--bug" target="_blank"
+             href="https://github.ibm.com/watson-health-playbook/watson-health-playbook.github.ibm.com/issues/new?title=%3Creplace%20with%20a%20description%3E&body=Description:%0A%0ASteps%20to%20Reproduce:%0A%0A%0A%0ABrowser:%0A%0AOS:%0A%0A%0A%0A%23playbook-bug&labels[]=bug">
+            Report an Issue or provide Feedback
+          </a>
+          <!--
+          <a class="content__nav-link u-icon u-icon--before u-icon--pencil" target="_blank"
+             href="https://github.ibm.com/watson-health-playbook/watson-health-playbook.github.ibm.com/edit/master/_content/tools/index.md">
+            Propose a Change
+          </a>
+        -->
+
+          <a class="content__nav-link u-icon u-icon--before u-icon--thumbs-up"
+             href="/watson-health-playbook/nps/get-nps">
+            How are we doing?
+          </a>
+        </nav>
+          
+
+
+  
+  
+  
+    
+  
+    
+  
+
+  
+  
+
+
+
+
+
+
+
+
+<header class="content__header">
+  <!-- <p class="content__section"></p> -->
+  <h1 class="content__heading">Tools & Resources Guide...</h1>
+  <div class="breadcrumb">
+    <div id="breadcrumbs">
+<!-- Grab the current full path and split it up -->
+
+
+<!-- Don't put the "Top" tag on the root page, it isn't needed -->
+
+<a href="/watson-health-playbook/">Top</a>
+
+
+
+  
+  <!-- otherwise, create the crumb list -->
+    / <a href="/watson-health-playbook/tools/">tools</a>
+  
+
+  
+    <!-- If a breadcrumb exists, then use that always -->
+    
+      / Tools Guide
+    
+  
+
+</div>
+
+  </div>
+</header>
+
+  <section class="content__body-text">
+    <h1 id="watson-health-tools">Watson Health Tools</h1>
+<p>The following tool set consists of tools that are specifically customized and hosted for Watson Health, giving teams an integrated set of best-in-class tools to take projects from idea to production.</p>
+<ul>
+  <li><a href="../aha/">Aha!</a> - Team based offering management tool for project status and high-level requirements grooming.</li>
+  <li><a href="../github/">GitHub</a> - IBM’s internal deployment of GitHub Enterprise</li>
+  <li><a href="../jira/">Jira</a> - Web-based Agile project management tool used to plan and track development efforts, assign tasks, and decide story points.</li>
+  <li><a href="../confluence/">Confluence</a> - Collaborative document management integrated with Jira. Provides document control and version management of documents.</li>
+  <li><a href="../xray/">Xray</a> - Xray Test Management tool for Jira that supports test planning, test design, test execution and test reporting.</li>
+</ul>
+
+<p>The following are additional tools which are used by Watson Health extensively.</p>
+<ul>
+  <li><a href="../slack/">Slack</a> - Team-based collaborative communication</li>
+  <li><a href="../ca/">Cognitive Architect</a> - Team-based online architectural modeling tool using the IBM Team Solution Design Method templates.</li>
+</ul>
+
+<h2 id="tool-integration-plan">Tool Integration plan</h2>
+
+<p>While the tools listed below are the intended tooling for Watson Health, there currently is an effort underway to integrate all of the tools together into a cohesive whole that will allow:</p>
+<ul>
+  <li>Traceability between all artifacts from high-level requirements down to builds against stories.</li>
+  <li>Common template with a seamless workflow across Aha!, Jira, Confluence and GitHub.</li>
+  <li>Integration between the Watson Health Playbook tasks and the tasks in the tooling workflows.</li>
+  <li>Common tool licensing for Watson Health so that all teams can get up to speed quickly without too much bureaucracy.</li>
+  <li>Support ISO 9001 and the WH QMS needs in the same flow as Non-GxP projects. This means that a common set of templates and consistent set of documentation will be created for all projects, but the process will support taking Validation and Verification to the next level when needed.</li>
+</ul>
+
+<p>At a high level the Traceability Metamodel is as follows:</p>
+
+<p><img src="https://pages.github.ibm.com/watson-health-playbook/resources/images/tools/metamodel.png" alt="Traceability Metamodel" /></p>
+
+<p>This translates to a metamodel tooling implementation that looks like the following:</p>
+
+<p><img src="https://pages.github.ibm.com/watson-health-playbook/resources/images/tools/aha-jira-github-overview.jpg" alt="Implementation of Traceability Metamodel" /></p>
+
+<p>The integration landscape that is under construction can be seen in the following diagram:</p>
+
+<p><img src="https://pages.github.ibm.com/watson-health-playbook/resources/images/tools/WHPlaybookToolTopology.jpg" alt="Tool Integration Plan" /></p>
+
+<p><em><strong>Please understand that the tool integration is not completed, but when it is, training will be made available. At such a time everyone will be expected to use this process. Therefore getting to know it now while it is still under construction is recommended.</strong></em></p>
+
+<h3 id="onboarding">Onboarding</h3>
+
+<p><a href="../../support/onboarding/">Onboarding</a> - Manager with a new employee? Just joined a Squad? Start here…</p>
+
+<h3 id="watson-health-developer-tooling">Watson Health Developer Tooling</h3>
+
+<p>We have a whole section of the site dedicated to Watson Health Developer Tooling.</p>
+<ul>
+  <li><a href="../../dev/developer-guide/index/">Developer Guide</a></li>
+</ul>
+
+<h3 id="software-license-management-slm">Software License Management (SLM)</h3>
+
+<p>Watson Health (and many other <a href="https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Software%20Group%20Software%20License%20Management/page/Find%20Your%20Admin%20Contact" target="_blank">Business Segments</a>) can request licenses for software through the SLM (Software Licence Management) Portal.</p>
+<ul>
+  <li><a href="https://slm.w3ibm.mybluemix.net/SLM/Products" target="_blank">https://slm.w3ibm.mybluemix.net/SLM/Products</a></li>
+</ul>
+
+<h3 id="productivity">Productivity</h3>
+
+<ul>
+  <li><a target="_blank" href="https://w3-connections.ibm.com/communities/service/html/communityoverview?communityUuid=5b88000f-d3c4-4e5a-b2be-4acd9e3a0c6a">Microsoft Office</a> - Microsoft Office is available for all IBMers</li>
+  <li><a href="../../tools/box/">Box.com</a> - Unlimited, secure file storage and sharing for the enterprise.</li>
+</ul>
+
+<p><a name="video"></a></p>
+
+<h3 id="video-conferencing">Video Conferencing</h3>
+
+<p>The full list of approved video conferencing solutions can be found here: <a target="_blank" href="https://w3.ibm.com/help/#/article/video_conf_list">Allowed Video Conferencing Tools</a>. Here are our favorites…</p>
+<ul>
+  <li><strong>Slack</strong> has been <a href="https://github.ibm.com/Whitewater/Slack/blob/master/security-assessments/videoconference.md" target="_blank">approved</a> for <strong>IBM Confidential</strong> audio and video calling - this is a GREAT solution for Squad-based video conferencing. Just click the phone handset icon to initiate a call!</li>
+  <li><strong>WebEx</strong> works for large groups, and allows screen sharing. <a href="https://w3-connections.ibm.com/blogs/9b423260-ec3f-4c33-9e8e-91cd8d26e688/entry/Webex_for_All?lang=en_us" target="_blank">Click here</a> to start using WebEx.</li>
+</ul>
+
+<h3 id="designing">Designing</h3>
+
+<h4 id="plug-ins">Plug-Ins</h4>
+
+<!-- - <a href="">Craft</a>  Sketch 3 plug-in for using and editing Watson's design libraries -->
+<ul>
+  <li><a target="_blank" href="https://github.com/tudou527/marketch?ref=sketchhunt">Marketch</a></li>
+</ul>
+
+<h4 id="design">Design</h4>
+
+<ul>
+  <li><a target="_blank" href="http://type-scale.com/">Type Scale</a> Base ratios for your type sizes</li>
+</ul>
+
+<h4 id="animation">Animation</h4>
+
+<ul>
+  <li><a target="_blank" href="http://principleformac.com/">Principle</a> makes it easy to design animated and interactive user interfaces.</li>
+</ul>
+
+<h4 id="accessibility">Accessibility</h4>
+
+<ul>
+  <li><a target="_blank" href="https://www.paciellogroup.com/resources/contrastanalyser/">Colour Contrast Analyzer</a></li>
+  <li><a target="_blank" href="http://colororacle.org/">Color Oracle</a> is a free color blindness simulator for Window, Mac and Linux. It takes the guesswork out of designing for color blindness by showing you in real time what people with common color vision impairments will see.</li>
+</ul>
+
+<h3 id="communicating">Communicating</h3>
+
+<ul>
+  <li><a class="tools-index" target="_blank" href="https://ibm.ent.box.com/s/a8h3rkgz3r7kiysrzkq8wk1dkwnddfg7">Watson Health PowerPoint Templates </a></li>
+  <li><a class="tools-index" target="_blank" href="http://webdev01.webmaster.ibm.com/watson/health/assets/signatures/">Watson Health Email Signature</a></li>
+  <li><a class="tools-index" target="_blank" href="https://apps.na.collabserv.com/communities/service/html/communityoverview?communityUuid=258bb0e3-3855-49cc-bdd8-9709c05a284d">Watson Health Business Cards</a></li>
+</ul>
+
+<h4 id="career">Career</h4>
+
+<ul>
+  <li>
+    <p><a href="http://w3-01.ibm.com/hr/web/navigation/index.html" target="_blank">You and IBM</a></p>
+  </li>
+  <li>
+    <p><a href="https://yourlearning.ibm.com/" target="_blank">Your Learning (aka THINK40)</a></p>
+  </li>
+  <li>
+    <p><a href="https://w3.ibm.com/hr/performance/checkpoint/" target="_blank">Checkpoint</a></p>
+  </li>
+  <li>
+    <p><a href="https://w3-connections.ibm.com/wikis/home?lang=en#!/wiki/Watson%20%26%20Watson%20Health%20Operations/page/Technical%20Leadership%20Mentors" target="_blank">Technical Leadership Mentors</a></p>
+  </li>
+  <li>
+    <p><a href="https://w3.ibm.com/careers/" target="_blank">Careers@IBM</a></p>
+  </li>
+  <li>
+    <p><a href="https://w3-workplace.ibm.com/ibm/ibmer/overview/" target="_blank">1-3-9 Our Purpose, Values &amp; Practices</a></p>
+  </li>
+</ul>
+
+<h3 id="the-archive---older-content-you-may-want-to-refer-to">The Archive - Older content you may want to refer to…</h3>
+
+<h4 id="communities">Communities</h4>
+
+<p>For a <em>very</em> long time, IBM Connections was the go to place for information. Today, collaboration happens in GitHub and Slack, reference material is here on the Playbook. You may find these useful references to older information…</p>
+
+<ul>
+  <li><a href="https://w3-connections.ibm.com/communities/service/html/communitystart?communityUuid=902efee5-3b0e-4cc3-890f-5b4ba4192f58" target="_blank">IBM Watson Health</a>
+This is the main internally-public Watson Health community available to everyone in IBM.  There are multiple sub communities under this main which are restricted and members needs to be added/invited to join.</li>
+</ul>
+
+<h4 id="optional-communities">Optional Communities</h4>
+
+<p>Optional Communities you may wish to sign up for assuming they align to your team’s focus.</p>
+
+<ul>
+  <li>
+    <p><a href="https://w3-connections.ibm.com/communities/service/html/communitystart?communityUuid=6c2eb3d7-595b-47f5-97e0-5eae31faf9d5" target="_blank">Digital IBMer</a>
+This community is designed to help IBMers build their digital eminence by being smart, social and secure.</p>
+  </li>
+  <li>
+    <p><a href="https://w3-connections.ibm.com/blogs/902efee5-3b0e-4cc3-890f-5b4ba4192f58?lang=en" target="_blank">Watson Health Group Blogs</a>
+These are private blog posts intended for members of the Watson Health Group Community ONLY.</p>
+  </li>
+  <li>
+    <p><a href="https://ibm.biz/BdxtKD" target="_blank">IBM’s TAP</a>
+The Technology Adoption Program (TAP) is where you can find, try, and share emerging technology! TAP brings together IBMers – from every location, business unit, and job role – who have innovative projects (innovators) and those who are willing to try new technology that helps them work smarter (early adopters). Initial link will direct to the Community / Wiki. You can also sign up to Subscribe to the newsletter.</p>
+  </li>
+  <li>
+    <p><a href="https://w3-connections.ibm.com/communities/service/html/communitystart?communityUuid=f14aa341-aeef-4a21-bf4c-df41faf817c7" target="_blank">IBM Agile Academy</a>
+This community is a cross-IBM Agile center of learning and capability development to create a shared understanding of Agile at IBM. We will do this by providing training and coaching to help IBMers grow their skills, a framework for measuring our maturity, and this community as a means to IBMers to support each other in their journey to become agile.</p>
+  </li>
+  <li>
+    <p><a href="http://w3-connections.ibm.com/communities/service/html/memberjoinsubmit?returnto=communityview&amp;communityUuid=5387b4bb-23ee-4a4e-8948-fc5fc9666697&amp;dangerousurlnonce=9D4G092D5B5EEF59414B9AF1F7A66C002F7D" target="_blank">Mac Community</a>
+This community is intended for those MAC users within IBM. It includes Tips &amp; Tricks, as well as a Forum and Support Site.</p>
+  </li>
+</ul>
+
+
+    
+
+    
+  </section>
+
+      </main>
+      <aside class="sidebar app-chrome__sidebar">
+  <div class="sidebar__container">
+    
+
+
+
+
+
+  
+  
+
+  
+    <div class="sidebar__group links js__collapsible">
+      <h3 class="links__heading u-icon u-icon--before u-icon--compass">
+        Watson Health Tools
+      </h3>
+      <ul class="links__list">
+        
+        
+          
+            
+            <li class="links__list-item">
+                <a href="/tools/jira/index/"
+                   class="links__link ">
+                    Jira
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/tools/aha/index/"
+                   class="links__link ">
+                    Aha! - New Offerings Start Here
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/tools/ca/index/"
+                   class="links__link ">
+                    Cognitive Architect
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/tools/github/index/"
+                   class="links__link ">
+                    GitHub Enterprise
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/tools/xray/index/"
+                   class="links__link ">
+                    Xray Test Management
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/tools/confluence/index/"
+                   class="links__link ">
+                    Confluence
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/tools/box/index/"
+                   class="links__link ">
+                    Box
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/tools/slack/index/"
+                   class="links__link ">
+                    Slack
+                </a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  
+
+
+  
+  
+
+  
+    <div class="sidebar__group links js__collapsible">
+      <h3 class="links__heading u-icon u-icon--before u-icon--info">
+        WH Resources
+      </h3>
+      <ul class="links__list">
+        
+          
+            <li class="links__list-item">
+                <a target="_blank" href="https://w3-connections.ibm.com/communities/service/html/communityoverview?communityUuid=902efee5-3b0e-4cc3-890f-5b4ba4192f58" class="links__link">
+                    Community
+                </a>
+            </li>
+          
+            <li class="links__list-item">
+                <a target="_blank" href="https://w3-connections.ibm.com/blogs/902efee5-3b0e-4cc3-890f-5b4ba4192f58?lang=en_us" class="links__link">
+                    Blog
+                </a>
+            </li>
+          
+            <li class="links__list-item">
+                <a target="_blank" href="https://watsonbrandtool.mybluemix.net/" class="links__link">
+                    Brand
+                </a>
+            </li>
+          
+            <li class="links__list-item">
+                <a target="_blank" href="https://pages.github.ibm.com/Watson-Health/design-system/index.html" class="links__link">
+                    WH Design Pattern & Asset Library
+                </a>
+            </li>
+          
+            <li class="links__list-item">
+                <a target="_blank" href="https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/W6a642739bb36_44d9_90cd_f2ec86efebbe/page/Training%20%26%20Document%20Control" class="links__link">
+                    WH Compliance Training wiki
+                </a>
+            </li>
+          
+            <li class="links__list-item">
+                <a target="_blank" href="https://pages.github.ibm.com/wh-ops/wh-ops-playbook/" class="links__link">
+                    Watson Health Operations playbook
+                </a>
+            </li>
+          
+        
+        
+          
+            
+            <li class="links__list-item">
+                <a href="/support/wh-glossary/"
+                   class="links__link ">
+                    Glossary
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/support/onboarding/"
+                   class="links__link ">
+                    WH New Hire Onboarding
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/tools/index/"
+                   class="links__link links__link--selected">
+                    Tools & Resources Guide...
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/compliance/regulatory-considerations/"
+                   class="links__link ">
+                    Regulatory Considerations
+                </a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  
+
+
+  
+  
+
+  
+    <div class="sidebar__group links js__collapsible">
+      <h3 class="links__heading u-icon u-icon--before u-icon--info">
+        About The WH Playbook
+      </h3>
+      <ul class="links__list">
+        
+        
+          
+            
+            <li class="links__list-item">
+                <a href="/about/index/"
+                   class="links__link ">
+                    About us...
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/about/nav/"
+                   class="links__link ">
+                    How to navigate...
+                </a>
+            </li>
+          
+            
+            <li class="links__list-item">
+                <a href="/about/faq/"
+                   class="links__link ">
+                    FAQ
+                </a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  
+
+
+  </div>
+</aside>
+
+    </div>
+    <div class="docs-lightbox docs-lightbox--disabled">
+  <div class="docs-lightbox__image-wrap">
+    <img class="docs-lightbox__image" src="" alt="">
+  </div>
+  <a class="docs-lightbox__close-btn" href="#close">close</a>
+</div>
+
+    <script src="/assets/js/main.min.js"></script>
+    
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+      ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/js/imageMapResizer.min.js"></script>
+    <script>$('map').imageMapResize();</script>
+  </body>
+</html>

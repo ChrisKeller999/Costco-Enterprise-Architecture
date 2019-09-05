@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8"></meta>
+
+<meta
+  name="viewport"
+  content="width=device-width,minimum-scale=1,initial-scale=1">
+</meta>
+
+<title>Watson Health Playbook</title>
+
+<link
+  href="https://pages.github.ibm.com/watson-health-playbook/assets/img/favicon/apple-touch-icon.png"
+  rel="apple-touch-icon"
+  sizes="180x180">
+</link>
+
+<link
+  href="https://pages.github.ibm.com/watson-health-playbook/assets/img/favicon/favicon-32x32.png"
+  rel="icon"
+  type="image/png"
+  sizes="32x32">
+</link>
+
+<link
+  href="https://pages.github.ibm.com/watson-health-playbook/assets/img/favicon/favicon-16x16.png"
+  rel="icon"
+  type="image/png"
+  sizes="16x16">
+</link>
+
+<link
+  href="https://pages.github.ibm.com/watson-health-playbook/assets/img/favicon/manifest.json"
+  rel="manifest">
+</link>
+
+<link
+  color="#5bbad5"
+  href="https://pages.github.ibm.com/watson-health-playbook/assets/img/favicon/safari-pinned-tab.svg"
+  rel="mask-icon">
+</link>
+
+<link
+  href="https://pages.github.ibm.com/watson-health-playbook/assets/img/favicon/favicon.ico"
+  rel="shortcut icon">
+</link>
+
+<meta
+  name="msapplication-config"
+  content="https://pages.github.ibm.com/watson-health-playbook/assets/img/favicon/browserconfig.xml">
+</meta>
+
+<meta
+  name="theme-color"
+  content="#ffffff">
+</meta>
+
+<link
+  href="https://pages.github.ibm.com/watson-health-playbook/assets/css/main.css"
+  rel="stylesheet">
+</link>
+
+<link
+  href="https://pages.github.ibm.com/watson-health-playbook/assets/tipuesearch/css/normalize.css"
+  rel="stylesheet">
+</link>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://pages.github.ibm.com/watson-health-playbook/assets/tipuesearch/tipuesearch_content.js">
+</script>
+
+<link
+  href="https://pages.github.ibm.com/watson-health-playbook/assets/tipuesearch/css/tipuesearch.css"
+  rel="stylesheet">
+</link>
+
+<script src="https://pages.github.ibm.com/watson-health-playbook/assets/tipuesearch/tipuesearch_set.js">
+</script>
+
+<script src="https://pages.github.ibm.com/watson-health-playbook/assets/tipuesearch/tipuesearch.min.js">
+</script>
+</head>
+
+<body>
+  <div class="disclaimer">
+    Jira, Confluence, Xray and Aha workflows are still being developed and are not production ready yet. Training on tools and process will be made available when ready.
+  </div>
+<div class="app-chrome">
+  <header class="app-chrome__header">
+    <a
+      class="logo"
+      href="https://pages.github.ibm.com/watson-health-playbook/"
+      rel="home">
+      <img
+        class="logo__image"
+        alt="Watson Health Playbook"
+        src="https://pages.github.ibm.com/watson-health-playbook/assets/img/playbook-logo-white-transparent.png"/>
+      <span class="logo__text">Watson Health Playbook</span>
+    </a>
+  </header>
+
+  <main class="content app-chrome__main-content">
+    <nav
+      class="content__nav"
+      style="max-width:56.5rem">
+      <a
+        class="content__nav-link u-icon u-icon--before u-icon--search"
+        href="https://pages.github.ibm.com/watson-health-playbook/watson-health-playbook/search.html">
+        Search
+      </a>
+
+      <a
+        class="content__nav-link u-icon u-icon--before u-icon--bug" target="_blank"
+        href="https://github.ibm.com/watson-health-playbook/watson-health-playbook.github.ibm.com/issues/new?title=%3Creplace%20with%20a%20description%3E&body=Description:%0A%0ASteps%20to%20Reproduce:%0A%0A%0A%0ABrowser:%0A%0AOS:%0A%0A%0A%0A%23playbook-bug&labels[]=bug">
+        Report an Issue or provide Feedback
+      </a>
+      <!--
+      <a
+        class="content__nav-link u-icon u-icon--before u-icon--pencil" target="_blank"
+        href="https://github.ibm.com/watson-health-playbook/watson-health-playbook.github.ibm.com/">
+        Propose a Change
+      </a>
+      -->
+
+      <a
+        class="content__nav-link u-icon u-icon--before u-icon--thumbs-up"
+        href="../nps/get-nps">
+        How are we doing?
+      </a>
+    </nav>
+
+    <header class="content__header">
+      <!-- <p class="content__section"></p> -->
+
+      <h1 class="content__heading">Search</h1>
+    </header>
+
+    <section class="content__body-text">
+      <form action="search.html">
+        <div class="tipue_search_left">
+          <input
+            id="tipue_search_input"
+            name="q"
+            type="text"
+            pattern=".{3,}"
+            title="At least 3 characters"
+            required/>
+        </div>
+
+        <div class="tipue_search_right">
+          <input
+            alt="Submit Form"
+            src="https://pages.github.ibm.com/watson-health-playbook/assets/tipuesearch/search.png"
+            type="image"
+            height="24"
+            width="24"/>
+        </div>
+
+        <div style="clear: both;"></div>
+      </form>
+
+      <div id="tipue_search_content"></div>
+
+      <br/>
+
+      <br/>
+
+      <blockquote>
+        <p>
+          <strong>ProTip:</strong>
+
+          `!` means not - don't include them in your search strings about the tool `Aha!`
+        </p>
+      </blockquote>
+
+      <br/>
+
+      <br/>
+
+      Search Index last updated 20180329.083258
+    </section>
+  </main>
+
+  <aside class="sidebar app-chrome__sidebar">
+    <div class="sidebar__container">
+      <div class="sidebar__group links js__collapsible">
+        <h3 class="links__heading u-icon u-icon--before u-icon--wrench">WH Resources</h3>
+
+        <ul class="links__list">
+          <li class="links__list-item">
+            <a
+              class="links__link "
+              href="https://w3-connections.ibm.com/communities/service/html/communityoverview?communityUuid=902efee5-3b0e-4cc3-890f-5b4ba4192f58">
+              Community
+            </a>
+          </li>
+
+          <li class="links__list-item">
+            <a
+              class="links__link "
+              href="https://w3-connections.ibm.com/blogs/902efee5-3b0e-4cc3-890f-5b4ba4192f58?lang=en_us">
+              Blog
+            </a>
+          </li>
+
+          <li class="links__list-item">
+            <a
+              class="links__link "
+              href="https://watsonbrandtool.mybluemix.net/">
+              Brand
+            </a>
+          </li>
+
+          <li class="links__list-item">
+            <a
+              class="links__link "
+              href="https://pages.github.ibm.com/Watson-Health/design-system/index.html">
+              WH Design Pattern & Asset Library
+            </a>
+          </li>
+
+          <li class="links__list-item">
+            <a
+              class="links__link "
+              href="https://pages.github.ibm.com/watson-health-playbook/support/wh-glossary/">
+              Glossary
+            </a>
+          </li>
+
+          <li class="links__list-item">
+            <a
+              class="links__link "
+              href="https://pages.github.ibm.com/watson-health-playbook/support/onboarding/">
+              WH New Hire Onboarding
+            </a>
+          </li>
+
+          <li class="links__list-item">
+            <a
+              class="links__link "
+              href="https://pages.github.ibm.com/watson-health-playbook/tools/index/">
+              Tools & Resources Guide...
+            </a>
+          </li>
+
+          <li class="links__list-item">
+            <a
+              class="links__link "
+              href="https://pages.github.ibm.com/watson-health-playbook/compliance/compliance-guild/regulatory-considerations/">
+              Regulatory Considerations
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar__group links js__collapsible">
+        <h3 class="links__heading u-icon u-icon--before u-icon--info">About The Playbook</h3>
+
+        <ul class="links__list">
+          <li class="links__list-item">
+            <a
+              class="links__link "
+              href="https://pages.github.ibm.com/watson-health-playbook/about/index/">
+              About us...
+            </a>
+          </li>
+
+          <li class="links__list-item">
+            <a
+              class="links__link "
+              href="https://pages.github.ibm.com/watson-health-playbook/about/nav/">
+              How to navigate...
+            </a>
+          </li>
+
+          <li class="links__list-item">
+            <a
+              class="links__link "
+              href="https://pages.github.ibm.com/watson-health-playbook/about/faq/">
+              FAQ
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<div class="docs-lightbox docs-lightbox--disabled">
+  <div class="docs-lightbox__image-wrap">
+    <img
+      class="docs-lightbox__image"
+      alt
+      src/>
+  </div>
+
+  <a
+    class="docs-lightbox__close-btn"
+    href="#close">
+    close
+  </a>
+</div>
+
+<script src="https://pages.github.ibm.com/watson-health-playbook/assets/js/main.min.js"></script>
+
+<script>
+  $(document).ready(function () {       $('#tipue_search_input').tipuesearch();     });
+</script>
+
+</body>
+</html>
