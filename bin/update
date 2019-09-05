@@ -1,7 +1,5 @@
 #!/bin/bash
 
-UPSTREAM_REPO=git@github.ibm.com:jason-lengstorf/docs-starter.git
-UPSTREAM_BRANCH=gh-pages
 
 # Verify that the upstream remote is set.
 if git ls-remote upstream > /dev/null; then
