@@ -7,7 +7,7 @@ title: Costco Enterprise Architecture Playbook
 
 {% include banners-3-col-with-images.html
     b1_title="Why"
-    b1_subtitle="The Watson Health Mission"
+    b1_subtitle="The Mission"
     b1_img="https://pages.github.com/costco-enterprise-architecture-playbook/resources/images/homepage/standup.png"
     b1_img_size="76px"
     b1_button="Learn More"
