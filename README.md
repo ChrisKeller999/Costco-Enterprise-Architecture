@@ -1,6 +1,6 @@
 # CostcoEnterprise Architecture
 This repository is for the Costco Enterprise Playbook, a GitHub Pages-based site that contains everything you need to know to run a Software Development Project
-https://pages.github.com/costco-enterprise-playbook/
+https://chriskeller999.github.io/Costco-Enterprise-Architecture/
 
 
 # Contributing
