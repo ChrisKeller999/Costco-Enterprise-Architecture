@@ -1,34 +1,21 @@
 resources:
-  title: WH Resources
+  title: Resources
   icon: info
   external:
   - name: Community
     url: https://w3-connections.ibm.com/communities/service/html/communityoverview?communityUuid=902efee5-3b0e-4cc3-890f-5b4ba4192f58
   - name: Blog
-    url: https://w3-connections.ibm.com/blogs/902efee5-3b0e-4cc3-890f-5b4ba4192f58?lang=en_us
+    url: www.yahoo.com
   - name: Brand
-    url: https://watsonbrandtool.mybluemix.net/
-  - name: WH Design Pattern & Asset Library
-    url: https://pages.github.ibm.com/Watson-Health/design-system/index.html
-  - name: WH Compliance Training wiki
-    url: https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/W6a642739bb36_44d9_90cd_f2ec86efebbe/page/Training%20%26%20Document%20Control
-  - name: Watson Health Operations playbook
-    url: https://pages.github.ibm.com/wh-ops/wh-ops-playbook/
+    url: www.yahoo.com
+  - name: Design Pattern & Asset Library
+    url: www.yahoo.com
   pages:
-  - /support/wh-glossary/
+  - /support/glossary/
   - /support/onboarding/
   - /tools/index/
-  - /compliance/regulatory-considerations/
-tools-onboarding:
-  title: Tools onboarding
-  icon: wrench
-  pages:
-    - /tools/onboarding/compliance-onboarding/
-    - /tools/onboarding/design-onboarding/
-    - /tools/onboarding/dev-onboarding/
-    - /tools/onboarding/offering-manager-onboarding/
 about:
-  title: About The WH Playbook
+  title: About The Playbook
   icon: info
   pages:
   - /about/index/
