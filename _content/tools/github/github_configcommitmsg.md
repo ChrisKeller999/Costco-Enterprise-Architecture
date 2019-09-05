@@ -17,14 +17,14 @@ Options 1 and 2 are relevant when using the Git command line client and Option 3
 
 Option 1 describes how to implement a local Git repository hook. For each repository that a user loads locally to their workstation, they will install a `prepare-commit-msg` hook to programmatically enforce the following comment standard:
 
-` <Jira-Issue-ID> "comment describing change" `
+` <Issue-ID> "comment describing change" `
 
 ### Example:
 `WOSD-23 change to implement new functionality`
 
 ### Dependencies
 1. You must manually create a `prepare-commit-msg` hook in each local Git repository you are working with.
-1. Private branch names must be named identically to the Jira issue you are working on; for example: `WHDD-40`.
+1. Private branch names must be named identically to the issue you are working on; for example: `WHDD-40`.
 1. You must complete your commits from the command line using the following syntax:
 
     `git commit -m "comment describing change"`
@@ -38,13 +38,13 @@ Option 1 describes how to implement a local Git repository hook. For each reposi
      1 file changed, 1 insertion(+)
     ```
     <br>
-    The resulting commit message which identifies the commit with the specified Jira Issue ID is as follows:<br>
+    The resulting commit message which identifies the commit with the specified Issue ID is as follows:<br>
 
     `[WHDD-40 a005078] WHDD-40 auto prepend branch name`
 
 ### Procedure
 1. Manually create a `prepare-commit-msg` hook in each local Git repository you are working with.
-2. For each local repository that you are working with, create a private branch named identical to the Jira Issue ID you are working on; for example: `WHDD-40`.
+2. For each local repository that you are working with, create a private branch named identical to the Issue ID you are working on; for example: `WHDD-40`.
 3. Create a file in your `hooks` directory named `prepare-commit-msg`.
     
 4. Populate the file with the following hook script content:
@@ -118,12 +118,12 @@ Complete the following client-side implementation to create the custom commit me
 
 ## Option 3:  Creating local dictionary file for Git Commits from Eclipse
 
-When using Eclipse for Git commits, use a local dictionary file to help ensure that your Git commits are associated with the correct Jira Issue ID.
+When using Eclipse for Git commits, use a local dictionary file to help ensure that your Git commits are associated with the correct Issue ID.
 
 ### Procedure
 1.  Create a local user dictionary text file, with the filename, `userdictionary.txt`,  and put this file in your user `home` directory.  This file acts as a spell-checker to ensure that the Issue ID associated with your Git commits via Eclipse are properly spelled.
 
-    For example, the project keys for the project development and test areas are `WOSD` and `WOST`, respectively. By adding the project keys `WOSD` and `WOST` to your local user dictionary file, you will receive a prompt on your Git commit if you misspelled the Jira Issue ID.
+    For example, the project keys for the project development and test areas are `WOSD` and `WOST`, respectively. By adding the project keys `WOSD` and `WOST` to your local user dictionary file, you will receive a prompt on your Git commit if you misspelled the Issue ID.
 
     Once implemented, use `CNTRL +1` on Windows or `COMMAND +1` on the Mac which offers auto correct options, as depicted in the following illustration:<br>
     ![Example Auto correct options](https://chriskeller999.github.io/Costco-Enterprise-Architecture/resources/images/tools/github/git_exampleautocorrectoptions.png "Example Auto correct options")
