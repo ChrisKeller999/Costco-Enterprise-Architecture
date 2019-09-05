@@ -7,15 +7,11 @@ breadcrumb: Configuring Git Commit Message Prompts
 # DRAFT
 
 ## Before You Begin
-Watson Health development teams require the ability to reliably associate their source code commits to repositories hosted at [github.ibm.com](https://github.ibm.com/){:target="_blank"} with issues managed in their respective Jira Development and Test projects.
-
-The IBM hosted [github.ibm.com](https://github.ibm.com/){:target="_blank"}  environment does not offer server-side hook support for operations, such as those associated with Git commit formatting standards.  Therefore, it is the responsibility of Watson Health development teams working in the [github.ibm.com](https://github.ibm.com/){:target="_blank"} environment to self-manage their Git repositories and the commit procedures for those repositories.
-
-This topic describes options available for Watson Health development teams to configure local Git repository commit procedures. Review the techniques for referencing the correct Jira Issue ID when commits are made.
+This topic describes options available for Costco IT and IS teams to configure local Git repository commit procedures. 
 
 Options 1 and 2 are relevant when using the Git command line client and Option 3 is relevant when working exclusively in Eclipse. Option 1 is relevant for all development environments.
 
-**Applicable Role:**  WH Developer
+**Applicable Role:**  Developer
 
 ## Option 1:  Creating a local Git repository hook (_Recommended in all development environments_)
 
@@ -48,11 +44,10 @@ Option 1 describes how to implement a local Git repository hook. For each reposi
 
 ### Procedure
 1. Manually create a `prepare-commit-msg` hook in each local Git repository you are working with.
-1. For each local repository that you are working with, create a private branch named identical to the Jira Issue ID you are working on; for example: `WHDD-40`.
-1. Create a file in your `hooks` directory named `prepare-commit-msg`.
-    ![Create prepare-commit-msg file](https://pages.github.ibm.com/watson-health-playbook/resources/images/tools/github/git_create_preparecommitmsg.png "Create prepare-commit-msg file")
-
-1. Populate the file with the following hook script content:
+2. For each local repository that you are working with, create a private branch named identical to the Jira Issue ID you are working on; for example: `WHDD-40`.
+3. Create a file in your `hooks` directory named `prepare-commit-msg`.
+    
+4. Populate the file with the following hook script content:
 
     ```bash
     #!/bin/bash
@@ -100,8 +95,8 @@ Complete the following client-side implementation to create the custom commit me
 1. Populate the gitmessage file with the following content:
 
     ```
-    WH Development commit format:
-    <Jira_Issue_ID> what changed in less than 50 characters
+    Development commit format:
+    <Issue_ID> what changed in less than 50 characters
     Ex: "WHDD-40 app install path change"
     ```
 
@@ -115,7 +110,7 @@ Complete the following client-side implementation to create the custom commit me
 
     ```
     WH Development commit format:
-    <Jira_Issue_ID> what changed in less than 50 characters
+    <Issue_ID> what changed in less than 50 characters
     Ex: "WHDD-40 app install path change"
     ```
     <br>
@@ -126,20 +121,18 @@ Complete the following client-side implementation to create the custom commit me
 When using Eclipse for Git commits, use a local dictionary file to help ensure that your Git commits are associated with the correct Jira Issue ID.
 
 ### Procedure
-1.  Create a local user dictionary text file, with the filename, `userdictionary.txt`,  and put this file in your user `home` directory.  This file acts as a spell-checker to ensure that the Jira Issue ID associated with your Git commits via Eclipse are properly spelled.
+1.  Create a local user dictionary text file, with the filename, `userdictionary.txt`,  and put this file in your user `home` directory.  This file acts as a spell-checker to ensure that the Issue ID associated with your Git commits via Eclipse are properly spelled.
 
-1. At minimum, add your Jira project keys to the dictionary text file. By adding your Jira project keys to the dictionary file, the system will prompt you if there are misspellings of the Jira Issue ID in your Git commit.
-
-    For example, the Jira project keys for the Watson for Oncology project development and test areas are `WOSD` and `WOST`, respectively. By adding the Jira project keys `WOSD` and `WOST` to your local user dictionary file, you will receive a prompt on your Git commit if you misspelled the Jira Issue ID.
+    For example, the project keys for the project development and test areas are `WOSD` and `WOST`, respectively. By adding the project keys `WOSD` and `WOST` to your local user dictionary file, you will receive a prompt on your Git commit if you misspelled the Jira Issue ID.
 
     Once implemented, use `CNTRL +1` on Windows or `COMMAND +1` on the Mac which offers auto correct options, as depicted in the following illustration:<br>
-    ![Example Auto correct options](https://pages.github.ibm.com/watson-health-playbook/resources/images/tools/github/git_exampleautocorrectoptions.png "Example Auto correct options")
+    ![Example Auto correct options](https://chriskeller999.github.io/Costco-Enterprise-Architecture/resources/images/tools/github/git_exampleautocorrectoptions.png "Example Auto correct options")
 
 1. Once your `userdictionary.txt` file is created in your `home` directory, from Eclipse, select **Eclipse > Preferences**. <br>
-    ![Select Eclipse > Preferences](https://pages.github.ibm.com/watson-health-playbook/resources/images/tools/github/git_eclipsepreferences.png "Select Eclipse > Preferences")
+    ![Select Eclipse > Preferences]https://chriskeller999.github.io/Costco-Enterprise-Architecture/resources/images/tools/github/git_eclipsepreferences.png "Select Eclipse > Preferences")
 
 1. Expand **General-\>Editors-\>Test Editors**, then select **Spelling**<br>
-    ![Spelling Test Editor](https://pages.github.ibm.com/watson-health-playbook/resources/images/tools/github/git_spellingtesteditor.png "Spelling Test Editor")
+    ![Spelling Test Editor](https://chriskeller999.github.io/Costco-Enterprise-Architecture/images/tools/github/git_spellingtesteditor.png "Spelling Test Editor")
 
     a. In Spelling preferences, clear the selection of (deselect) the following:
 
@@ -151,4 +144,4 @@ When using Eclipse for Git commits, use a local dictionary file to help ensure t
     b. Browse for and select your User defined dictionary.
 
     c. Click **Apply and Close**.<br>
-        ![Change Spelling preferences](https://pages.github.ibm.com/watson-health-playbook/resources/images/tools/github/git_changespellingpreferences.png "Change Spelling preferences")
+        ![Change Spelling preferences](https://chriskeller999.github.io/Costco-Enterprise-Architecture/resources/images/tools/github/git_changespellingpreferences.png "Change Spelling preferences")
