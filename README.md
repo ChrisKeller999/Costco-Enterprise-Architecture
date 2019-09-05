@@ -70,8 +70,6 @@ _**Change to the directory where you cloned the project**_
 - If you get any errors, follow the prompts to install any missing dependencies
 - If images do not show up, you likely will need to open up the LIVE playbook to log in using w3id credentials and get a token. This will enable you to access the images. All images are in a separate repository on the live GitHub site.
 
-**DO NOT USE THE MARKDOWN EDITOR TYPORA - IT IS NOT APPROVED BY IBM SECURITY**
-
 **Note:**
 - Search is set up to _only search Production_ - don't expect to see your changes show up in the search index while testing locally
 
@@ -89,12 +87,6 @@ The following should always be followed when editing pages in order to keep the 
 On any given page, links should always open a new browser. In markdown, you can add the
 
 <pre><code>{:target="_blank"}</code></pre>
-
-tag to the end of a link. For example:
-
-<pre><code>
-[MethodWeb](https://w3-01.ibm.com/services/methodweb/MethodWebUMF/index#/home){:target="_blank"}
-</code></pre>
 
 ### Local Links
 On any given page, a link to a page that exists locally to the playbook should use relative links, and also should NOT open in a new browser window.
@@ -142,10 +134,7 @@ dev-guild:
   title: Development Guild
   icon: compass
   external:
-  - name: Watson Cognitive Catalog
-    url: https://watsonpow01.rch.stglabs.ibm.com/services/cognitive_catalog/catalog/
-  - name: IBM Tech blog
-    url: https://www.ibm.com/w3-techblog/
+
   pages:
   - /dev/developer-guide/coding-standards-basics/
   - /dev/planning-and-tracking-work/ongoing-delivery/
@@ -162,8 +151,7 @@ see-also:
   title: See also...
   icon: info
   external:
-  - name: How will data live in the IBM Cloud
-    url: https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/Wa0a1d43ca7a0_4fff_87ff_04006c762969/page/Data%20Governance%20Team%20Member
+
 tools:
   title: Tools
   icon: wrench
@@ -177,23 +165,10 @@ resources:
   title: WH Resources
   icon: info
   external:
-  - name: Community
-    url: https://w3-connections.ibm.com/communities/service/html/communityoverview?communityUuid=902efee5-3b0e-4cc3-890f-5b4ba4192f58
-  - name: Blog
-    url: https://w3-connections.ibm.com/blogs/902efee5-3b0e-4cc3-890f-5b4ba4192f58?lang=en_us
-  - name: Brand
-    url: https://watsonbrandtool.mybluemix.net/
-  - name: WH Design Pattern & Asset Library
-    url: https://pages.github.ibm.com/Watson-Health/design-system/index.html
-  - name: WH Compliance Training wiki
-    url: https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/W6a642739bb36_44d9_90cd_f2ec86efebbe/page/Training%20%26%20Document%20Control
-  pages:
-  - /support/wh-glossary/
-  - /support/onboarding/
-  - /tools/index/
-  - /compliance/regulatory-considerations/
+  
+ 
 about:
-  title: About The WH Playbook
+  title: About The Costco Enterprise Architecture Playbook
   icon: info
   pages:
   - /about/index/
@@ -269,22 +244,22 @@ For example, to display 3 buttons across with icons, you would create a section 
 <pre><code>
 {% include banners-3-col-with-images.html
     b1_title="Why"
-    b1_subtitle="The Watson Health Mission"
-    b1_img="https://pages.github.ibm.com/watson-health-playbook/resources/images/homepage/standup.png"
+    b1_subtitle="Costco Enterprise Architecture Mission"
+    b1_img="https://pages.github.com/costco-enterprise-architecture-playbook/resources/images/homepage/standup.png"
     b1_img_size="76px"
     b1_button="Learn More"
     b1_link="/foundation/why/index/"
 
     b2_title="Who"
     b2_subtitle="Players, Roles, Responsibilities"
-    b2_img="https://pages.github.ibm.com/watson-health-playbook/resources/images/homepage/who-we-are.svg"
+    b2_img="https://pages.github.com/costco-enterprise-architecture-playbook/resources/images/homepage/who-we-are.svg"
     b2_img_size="26px"
     b2_button="Learn More"
     b2_link="/foundation/who/index/"
 
     b3_title="What"
-    b3_subtitle="Key Practices, OM Model, Portfolio Management"
-    b3_img="https://pages.github.ibm.com/watson-health-playbook/resources/images/homepage/tribe.png"
+    b3_subtitle="Key Practices"
+    b3_img="https://pages.github.com/costco-enterprise-architecture-playbook/resources/images/homepage/tribe.png"
     b3_img_size="56px"
     b3_button="Learn More"
     b3_link="/foundation/what/index/"
@@ -298,13 +273,13 @@ If there are only two buttons to show on a line, then use the **"banners-2-col-w
 <pre><code>
 {% include banners-2-col-with-images.html
     b1_title="WHD Pattern & Asset Library"
-    b1_img="https://pages.github.ibm.com/watson-health-playbook/resources/images/homepage/design-guide-black.png"
+    b1_img="https://pages.github.com/costco-enterprise-architecture-playbook/resources/images/homepage/design-guide-black.png"
     b1_button="Learn More"
     b1_external="true"
-    b1_full_link="https://pages.github.ibm.com/Watson-Health/design-system/index.html"
+    b1_full_link="https://pages.github.com/costco-enterprise-architecture/design-system/index.html"
 
     b2_title="Design Resources"
-    b2_img="https://pages.github.ibm.com/watson-health-playbook/resources/images/homepage/design-guide-black.png"
+    b2_img="https://pages.github.com/costco-enterprise-architecture-playbook/resources/images/homepage/design-guide-black.png"
     b2_button="Learn More"
     b2_link="/design/guide/"
 %}
@@ -315,7 +290,7 @@ And if there is only a single button on a line, then use **"banners-1-col-with-i
 <pre><code>
 {% include banners-1-col-left-with-images.html
     b1_title="Sense & Respond"
-    b1_img="https://pages.github.ibm.com/watson-health-playbook/resources/images/homepage/hills_24.svg"
+    b1_img="https://pages.github.com/costco-enterprise-architecture-playbook/resources/images/homepage/hills_24.svg"
     b1_button="Learn More"
     b1_link="/design/sense-and-respond/"
 %}
@@ -325,18 +300,6 @@ And if there is only a single button on a line, then use **"banners-1-col-with-i
 
 For each of the above buttons, it is highly recommended that if you create your own buttons, that you create them all the same size. If there is a discrepancy between the button sizes, then the button bar will not look consistent. One way to fix that, is to add the **"bN_img_size=Xpx"** setting to the button, for example:
 
-<pre><code>
-{% include banners-3-col-with-images.html
-    b1_title="Why"
-    b1_subtitle="The Watson Health Mission"
-    b1_img="https://pages.github.ibm.com/watson-health-playbook/resources/images/homepage/standup.png"
-    b1_img_size="76px"
-    b1_button="Learn More"
-    b1_link="/foundation/why/index/"
-
-    ...
-%}
-</code></pre>
 
 In the above example, the line **b1_img_size-"76px"** will scale the image in **b1_img=...** to have a width of 76 pixels. This is a good tool that can be used to "tweak" a button image to make it look the same as all the other images.
 
@@ -344,13 +307,6 @@ In the above example, the line **b1_img_size-"76px"** will scale the image in **
 
 Breadcrumbs are automatically generated based on the URL location of the page. However, the final name of the breadcrumb is designated in the front matter of the page, for example:
 
-<pre><code>
----
-title: Market Opportunity and Approach
-sidebar: dev-moa
-breadcrumb: Market Opportunity (Dev)
----
-</code></pre>
 
 You can see the variable **"breadcrumb:"** which contains a more readable and perhaps more descriptive name for the page to use in the breadcrumb. Therefore, when the page is viewed, the breadcrumb would look like so:
 
