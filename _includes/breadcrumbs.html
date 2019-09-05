@@ -1,0 +1,33 @@
+<div id="breadcrumbs">
+<!-- Grab the current full path and split it up -->
+{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+
+<!-- Don't put the "Top" tag on the root page, it isn't needed -->
+{% if crumbs.size > 1 %}
+<a href="{{ site.baseurl }}/">Top</a>
+{% endif %}
+
+{% for crumb in crumbs offset: 1 %}
+  {% if forloop.last %}
+    <!-- If a breadcrumb exists, then use that always -->
+    {% if page.breadcrumb %}
+      / {{ page.breadcrumb }}
+    {% else %}
+    <!-- Otherwise, check to see if there is an index.html -->
+      {% assign lc_crumb = crumb | downcase %}
+      {% if lc_crumb contains 'index' %}
+      <!-- If there is an index, then use the title YAML tag -->
+        {% if page.title %}
+          / {{ page.title }}
+        {% endif %}
+      {% else %}
+      <!-- If there isn't an index in this folder, then use the filename of the page -->
+        / {{ lc_crumb | replace:'-',' ' | remove:'.html' }}
+      {% endif %}
+    {% endif %}
+  {% else %}
+  <!-- otherwise, create the crumb list -->
+    / <a href="{{ site.baseurl }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' }}</a>
+  {% endif %}
+{% endfor %}
+</div>

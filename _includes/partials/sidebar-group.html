@@ -1,0 +1,41 @@
+
+{% assign sections = site.data.sidebar_links[page.sidebar] %}
+{% unless sections %}
+    {% assign sections = site.data.sidebar_links.default %}
+{% endunless %}
+
+{% for section_data in sections %}
+
+  {% assign section_id = section_data[0] %}
+  {% assign section = section_data[1] %}
+
+  {% if section.hidden != true %}
+    <div class="sidebar__group links js__collapsible">
+      <h3 class="links__heading u-icon u-icon--before u-icon--{{ section.icon }}">
+        {{ section.title }}
+      </h3>
+      <ul class="links__list">
+        {% if section.external %}
+          {% for ex_page in section.external %}
+            <li class="links__list-item">
+                <a target="_blank" href="{{ ex_page.url }}" class="links__link">
+                    {{ ex_page.name }}
+                </a>
+            </li>
+          {% endfor %}
+        {% endif %}
+        {% if section.pages %}
+          {% for doc_url in section.pages %}
+            {% assign doc = site.documents | where: "url", doc_url | first %}
+            <li class="links__list-item">
+                <a href="{{ site.github.url}}{{ doc.url }}"
+                   class="links__link {% if page.title == doc.title %}links__link--selected{% endif %}">
+                    {{ doc.title }}
+                </a>
+            </li>
+          {% endfor %}
+        {% endif %}
+      </ul>
+    </div>
+  {% endif %}
+{% endfor %}

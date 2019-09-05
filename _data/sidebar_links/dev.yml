@@ -1,0 +1,59 @@
+dev-guild:
+  title: Development Guild
+  icon: compass
+  external:
+  - name: Watson Cognitive Catalog
+    url: https://watsonpow01.rch.stglabs.ibm.com/services/cognitive_catalog/catalog/
+  - name: IBM Tech blog
+    url: https://www.ibm.com/w3-techblog/
+  pages:
+  - /dev/developer-guide/coding-standards-basics/
+  - /dev/planning-and-tracking-work/getting-organized/
+  - /dev/common-services/non-functional-reqs/
+  - /dev/continuous-delivery/index/
+  - /dev/developer-guide/legal-guidance/
+  - /dev/cloud-trans-guild/cloud-transformation/
+security:
+  title: Security Guild
+  icon: wrench
+  pages:
+  - /dev/security-guild/index/
+tools:
+  title: Tools
+  icon: wrench
+  pages:
+  - /tools/onboarding/dev-onboarding/
+  - /tools/aha/index/
+  - /dev/planning-and-tracking-work/getting-organized/#create-your-organizational-structure-in-aha
+  - /tools/jira/index/
+  - /tools/confluence/index/
+  - /tools/github/index/
+  - /tools/ca/index/
+resources:
+  title: WH Resources
+  icon: info
+  external:
+  - name: Community
+    url: https://w3-connections.ibm.com/communities/service/html/communityoverview?communityUuid=902efee5-3b0e-4cc3-890f-5b4ba4192f58
+  - name: Blog
+    url: https://w3-connections.ibm.com/blogs/902efee5-3b0e-4cc3-890f-5b4ba4192f58?lang=en_us
+  - name: Brand
+    url: https://watsonbrandtool.mybluemix.net/
+  - name: WH Design Pattern & Asset Library
+    url: https://pages.github.ibm.com/Watson-Health/design-system/index.html
+  - name: WH Compliance Training wiki
+    url: https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/W6a642739bb36_44d9_90cd_f2ec86efebbe/page/Training%20%26%20Document%20Control
+  - name: Watson Health Operations playbook
+    url: https://pages.github.ibm.com/wh-ops/wh-ops-playbook/
+  pages:
+  - /support/wh-glossary/
+  - /support/onboarding/
+  - /tools/index/
+  - /compliance/regulatory-considerations/
+about:
+  title: About The WH Playbook
+  icon: info
+  pages:
+  - /about/index/
+  - /about/nav/
+  - /about/faq/
